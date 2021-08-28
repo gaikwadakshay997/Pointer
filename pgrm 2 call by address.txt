@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void func(float *a,float *b)
+{
+ 
+    printf("addition = %.2f",(*a+*b));
+    
+      
+}
+
+int main()
+{
+    float a=10.0,b=10.0;
+    //printf("enter 2 numbers:");
+    //scanf("%f%f",&a,&b);
+    
+    func(&a,&b);
+ 
+}
+
+O/P - addition = 20.00

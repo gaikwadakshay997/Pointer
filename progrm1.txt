@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a=100;
+    float b = 20.0;
+    double c = 30.0;
+    char d = 'a';
+    
+    int* p1 = &a;
+    float* p2 = &b;
+    double* p3 = &c;
+    char* p4 = &d;
+    
+    printf("address of a = %u, and value of a = %d",p1,*p1); 
+    printf("\naddress of b = %u, and value of b = %f",p2,*p2); 
+    printf("\naddress of c = %u, and value of c = %lf",p3,*p3); 
+    printf("\naddress of d = %u, and value of d = %c",p4,*p4); 
+    
+    
+}
+
+O/P - 	
+address of a = 3586811368, and value of a = 100
+address of b = 3586811372, and value of b = 20.000000
+address of c = 3586811376, and value of c = 30.000000
+address of d = 3586811367, and value of d = a
+		

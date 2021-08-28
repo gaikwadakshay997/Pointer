@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int a=100,*ptr ;
+      ptr= &a;
+    
+    printf("\n value of a = %d",*ptr);
+     printf("\n address of a = %u",&a);
+    
+    
+    *ptr=*ptr+2;
+    
+    printf("\n value of a = %d",*ptr);
+    
+    printf("\n address of a using ptr =%u",ptr); 
+   
+}
+
+O/P - value of a = 100
+ address of a = 2998845148
+ value of a = 102
+address of a using ptr =2998845148
